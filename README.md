@@ -1,0 +1,1 @@
+# my_clunky_and_bad_cashierApp
