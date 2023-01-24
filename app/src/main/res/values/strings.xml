@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">oldKasir</string>
+    <string-array name="helloboys">
+        <item>i</item>
+        <item>o</item>
+        <item>p</item>
+    </string-array>
+</resources>

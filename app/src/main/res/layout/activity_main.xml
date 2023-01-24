@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="317dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="36dp"
+        android:text="Kasir Sekali Pake"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        />
+
+    <Button
+        android:id="@+id/btnSupplier"
+        android:layout_width="296dp"
+        android:layout_height="63dp"
+        android:text="Supplier"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnItem" />
+
+    <Button
+        android:id="@+id/btnTraksaksi"
+        android:layout_width="296dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="36dp"
+        android:text="Transaksi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btnItem"
+        android:layout_width="296dp"
+        android:layout_height="63dp"
+        android:text="Item"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTraksaksi" />
+
+    <Button
+        android:id="@+id/btnPaket"
+        android:layout_width="296dp"
+        android:layout_height="63dp"
+        android:text="Paket"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSupplier" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
