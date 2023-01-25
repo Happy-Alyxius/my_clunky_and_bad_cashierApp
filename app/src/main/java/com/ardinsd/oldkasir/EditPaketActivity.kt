@@ -116,7 +116,7 @@ class EditPaketActivity : AppCompatActivity() {
             val posSupplier = tp.id_supplier - 1
             editStok.setText(tp.item_datang.toString())
             spiItem.setSelection(posItem)
-            spiItem.setSelection(posSupplier)
+            spiSupplier.setSelection(posSupplier)
         }
     }
 
@@ -141,17 +141,17 @@ class EditPaketActivity : AppCompatActivity() {
     }
 
     fun insideSpinnerSupplier(){
-        val logSpinner = mutableListOf("pilih supplier")
+        val log2Spinner = mutableListOf("pilih supplier")
         CoroutineScope(Dispatchers.IO).launch {
             var size = db.supplierDao().getSuppliers().size
             var x : Int = size.toInt()
             x = x - 1
             for (i in 0.. x){
-                logSpinner.add(db.supplierDao().getSuppliers().get(i).name_supplier.toString())
+                log2Spinner.add(db.supplierDao().getSuppliers().get(i).name_supplier.toString())
             }
-            logSpinner.removeAt(0)
+            log2Spinner.removeAt(0)
         }
-        val logAdapter = ArrayAdapter<String>(this, com.google.android.material.R.layout.support_simple_spinner_dropdown_item, logSpinner)
-        spiSupplier.adapter = logAdapter
+        val log2Adapter = ArrayAdapter<String>(this, com.google.android.material.R.layout.support_simple_spinner_dropdown_item, log2Spinner)
+        spiSupplier.adapter = log2Adapter
     }
 }

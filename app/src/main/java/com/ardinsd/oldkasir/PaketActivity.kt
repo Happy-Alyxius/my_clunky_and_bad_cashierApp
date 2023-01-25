@@ -62,7 +62,7 @@ class PaketActivity : AppCompatActivity(){
     fun setupRecyclerView(){
         paketAdapter = PaketAdapter(arrayListOf(), object : PaketAdapter.OnAdapterListener{
             override fun onClick(pkt : paket ) {
-                intentEdit(pkt.id_barang,constant.TYPE_READ)
+                intentEdit(pkt.id_paket,constant.TYPE_READ)
             }
         })
         recyclerViewPaket.apply{
